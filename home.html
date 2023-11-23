@@ -1,29 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Fabrica de Uniformes Escolares</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Admin</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" 
+    rel="stylesheet"/>    
+    <link rel="stylesheet" href="assets\css\estilohome.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 </head>
 <body>
-    <h1>Bienvenido a la Fábrica de Uniformes Escolares</h1>
-    <p>En nuestra tienda, ofrecemos una amplia variedad de uniformes escolares de alta calidad para colegios de todas las edades. Explore nuestras opciones a continuación:</p>
-
-    <h2>Opciones Disponibles</h2>
-    <ul>
-        <li><a href="uniformes.html">Ver Catálogo de Uniformes</a></li>
-        <li><a href="tallas.html">Guía de Tallas</a></li>
-        <li><a href="pedido.html">Realizar Pedido (Colegios)</a></li>
-        <li><a href="contactos.html">Contacto</a></li>
-    </ul>
-
-    <h2>Nuestros Servicios</h2>
-    <p>En nuestra fábrica de uniformes, nos enorgullece ofrecer los siguientes servicios:</p>
-    <ul>
-        <li>Fabricación de uniformes personalizados</li>
-        <li>Variedad de colores y diseños</li>
-        <li>Calidad y durabilidad garantizadas</li>
-        <li>Envío rápido y seguro</li>
-    </ul>
-
-    <p>¡Esperamos que encuentres el uniforme perfecto para tus necesidades escolares!</p>
+    <div class="contenedor">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="assets\images\UniClothesLogo.png" >
+                    <h2>Uni<span class="danger">Clothes</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active" >
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Menu</h3>
+                </a>
+                <a href="#"  title = "Clientes">
+                    <span class="material-symbols-outlined">person</span>
+                    <h3>Clientes</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-symbols-outlined">orders</span>
+                    <h3>Pedidos</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    <h3>Facturas</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-symbols-outlined">school</span>
+                    <h3>Colegios</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-symbols-outlined">apparel</span>
+                    <h3>Uniformes</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-symbols-outlined">inventory</span>
+                    <h3>Inventario</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-symbols-outlined">cut</span>
+                    <h3>Materia Prima</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-symbols-outlined">conveyor_belt</span>
+                    <h3>Proveedores</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Ajustes</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1 id="Titulo-pagina">Menu</h1>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-symbols-outlined">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$25000</h1>
+                        </div>
+                        <div class="pogress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24h</small>
+                </div>
+                <div class="expenses">
+                    <span class="material-symbols-outlined">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$10000</h1>
+                        </div>
+                        <div class="pogress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24h</small>
+                </div>
+                <div class="income">
+                    <span class="material-symbols-outlined">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>$15000</h1>
+                        </div>
+                        <div class="pogress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24h</small>
+                </div>
+            </div>
+            <div class="contenedor__clientes">
+                <h2>Registrar <span class="danger">Clientes</span></h2>
+                <div class="contenedor__clientes__formulario">
+                    <form action="" class="formulario__clientes">
+                        <input type="text" placeholder="Identificacion">
+                        <input type="Text" placeholder="Nombre">
+                        <input type="Text" placeholder="Telefono 1">
+                        <input type="Text" placeholder="Telefono 2">  
+                    </form>
+                    <button>Registrar</button>
+                </div>
+                <div class="contenedor__clientes__tablas">
+                    <div class="contenedor_clientes__tabla1">
+                        <h2>Nombre <span class="danger">Clientes</span></h2>
+                        <table id="tabla__clientes__nombres">
+                            <thead>
+                                <tr>
+                                    <th>Identificacion</th>
+                                    <th>Nombre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
+                            <?php foreach($data as dat) { ?>-->
+                                <tr>
+                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
+                                    <td><!--<?php echo $dat['Nombre']?>--></td>
+                                    <!--1006 y Juan se borra ;b-->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="contenedor_clientes__tabla2">
+                        <h2>Numero <span class="danger">Clientes</span></h2>
+                        <table id="tabla__clientes__numeros">
+                            <thead>
+                                <tr>
+                                    <th>Identificacion</th>
+                                    <th>Telefono</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <!--Hacen la misma mada aca en contenedor_clientes__tabla2 y borran 1006 y 315-->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="contenerdor3-sidebar3">
+                <h1>Sidebar3</h1>
+            </div>
+            <div class="contenedor4-sidebar4">
+                <h1>Sidear4</h1>
+            </div>
+            <div class="contenerdor5-sidebar5">
+                <h1>Sidebar5</h1>
+            </div>
+            <div class="contenedor6-sidebar6">
+                <h1>Sidear6</h1>
+            </div>
+            <div class="contenerdor7-sidebar7">
+                <h1>Sidebar7</h1>
+            </div>
+            <div class="contenedor8-sidebar8">
+                <h1>Sidear8</h1>
+            </div>
+            <div class="contenerdor9-sidebar9">
+                <h1>Sidebar9</h1>
+            </div>
+            <div class="contenedor10-sidebar10">
+                <h1>Sidear10</h1>
+            </div>
+        </main>
+    </div>
+    <script src="assets\js\scripthome.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">
+    </script> 
+    <script src="assets\js\dataTableConfig.js"></script>
 </body>
 </html>
