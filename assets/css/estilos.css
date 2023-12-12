@@ -108,9 +108,11 @@ main{
     border-radius: 10px;
 }
 
-.contenedor__login form button{
+a{
+    display: block;
+    width: 36%;
+    margin-top: 20px;
     padding: 10px 40px;
-    margin-top: 40px;
     border: none;
     font-size: 14px;
     background: #46a2fd;
