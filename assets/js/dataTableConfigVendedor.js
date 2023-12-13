@@ -37,10 +37,4 @@ $(document).ready(function () {
     initializeDataTable('#tabla__colegios__datos');
     initializeDataTable('#tabla__uniformes__datos');
     initializeDataTable('#tabla__producto__terminado__datos');
-    initializeDataTable('#tabla__materia__prima__medida');
-    initializeDataTable('#tabla__materia__prima__datos');
-    initializeDataTable('#tabla__proveedores__numeros');
-    initializeDataTable('#tabla__proveedores__datos');
-    initializeDataTable('#tabla__ajustes__usuario__datos');
 });
-

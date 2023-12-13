@@ -1,4 +1,4 @@
-const containerClasses = '.contenedor__menu, .contenedor__clientes, .contenedor__pedidos, .contenedor__facturas, .contenedor__colegios, .contenedor__uniformes, .contenedor__producto__terminado, .contenedor__materia__prima, .contenedor__proveedores, .contenedor__ajustes__usuario';
+const containerClasses = '.contenedor__menu, .contenedor__clientes, .contenedor__pedidos, .contenedor__facturas, .contenedor__colegios, .contenedor__uniformes, .contenedor__producto__terminado';
 const products = ['CAMISA HOMBRE', 'PANTALON HOMBRE', 'BUSO HOMBRE', 'SHORTS HOMBRE', 'CAMISA MUJER', 'PANTALON MUJER', 'VESTIDO', 'FALDA', 'CAMISA DIARIO HOMBRE', 'PANTALON DIARIO HOMBRE', 'CAMISA ED. FISICA HOMBRE', 'SUDADERA HOMBRE', 'CAMISA DIARIO MUJER', 'JARDINERA', 'FALDA ESCOLAR', 'CAMISA ED. FISICA MUJER', 'SUDADERA MUJER'];
 const schoolProducts = ['CAMISA DIARIO HOMBRE', 'PANTALON DIARIO HOMBRE', 'CAMISA ED. FISICA HOMBRE', 'SUDADERA HOMBRE', 'CAMISA DIARIO MUJER', 'JARDINERA', 'FALDA ESCOLAR', 'CAMISA ED. FISICA MUJER', 'SUDADERA MUJER'];
 const schools = ['Politecnico', 'Comfandi', 'Academico'];
