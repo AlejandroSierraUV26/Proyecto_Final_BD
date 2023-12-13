@@ -33,7 +33,7 @@
                     <h2>Iniciar Sesión Vendedor</h2>
                     <input type="text" placeholder="Usuario Vendedor">
                     <input type="password" placeholder="Constraseña">
-                    <a href="pedido.html">Entrar</a>
+                    <a href="homevendedor.html">Entrar</a>
                 </form>
             </div>
         </div>
