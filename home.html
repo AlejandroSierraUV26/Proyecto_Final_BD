@@ -178,33 +178,362 @@
                         </table>
                     </div>
                 </div>
-                
             </div>
-            <div class="contenerdor3-sidebar3">
-                <h1>Sidebar3</h1>
+            <div id="pedidoContenedor" class="contenedor__pedidos">
+                <h2>Registrar <span class="danger">Pedidos</span></h2>
+                <div class="contenedor__pedidos__registro">
+                    <div id= "pedidoid" class="pedido"> 
+                        <button id="nuevoPedidoBoton">Nuevo Pedido</button>
+                    </div>
+                    <div class="pedidoRellenar">
+                        <input type="text" placeholder="Identificacion Cliente">
+                        <input type="text" placeholder="Abono">
+                        <button id="confirmarPedido">Confirmar Pedido</button>
+                    </div>
+                </div>
+                <div class="contenedor__pedidos__tablas">
+                    <div class="contenedor_pedidos__tabla1">
+                        <h2>Lista <span class="danger">Pedidos</span></h2>
+                        <table id="tabla__pedidos">
+                            <thead>
+                                <tr>
+                                    <th>Numero de Pedido</th>
+                                    <th>Fecha de Encargo</th>
+                                    <th>Fecha de Entrega</th>
+                                    <th>Abono</th>
+                                    <th>Identificacion Cliente</th>
+                                    <th>Numero de Factura</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
+                            <?php foreach($data as dat) { ?>-->
+                                <tr>
+                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
+                                    <td><!--<?php echo $dat['Nombre']?>--></td>
+                                    <!--1006 y Juan se borra ;b-->
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="contenedor_pedidos__tabla2">
+                        <h2>Detalles <span class="danger">Pedidos</span></h2>
+                        <table id="tabla__pedidos__detalles">
+                            <thead>
+                                <tr>
+                                    <th>Numero de Pedido</th>
+                                    <th>Articulo</th>
+                                    <th>Medidas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
+                            <?php foreach($data as dat) { ?>-->
+                                <tr>
+                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
+                                    <td><!--<?php echo $dat['Nombre']?>--></td>
+                                    <!--1006 y Juan se borra ;b-->
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
             </div>
-            <div class="contenedor4-sidebar4">
-                <h1>Sidear4</h1>
+            <div class="contenedor__facturas">                
+                <div class="contenedor__facturas__tablas">
+                    <div class="contenedor_facturas__tabla1">
+                        <h2>Lista <span class="danger">Facturas</span></h2>
+                        <table id="tabla__facturas">
+                            <thead>
+                                <tr>
+                                    <th>Numero de Factura</th>
+                                    <th>Monto</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
+                            <?php foreach($data as dat) { ?>-->
+                                <tr>
+                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
+                                    <td><!--<?php echo $dat['Nombre']?>--></td>
+                                    <!--1006 y Juan se borra ;b-->
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div class="contenerdor5-sidebar5">
-                <h1>Sidebar5</h1>
+            <div class="contenedor__colegios">
+                <h2>Registrar <span class="danger">Colegios</span></h2>
+                <div class="contenedor__colegios__formulario">
+                    <form action="" class="formulario__colegios">
+                        <input type="text" placeholder="Identificacion">
+                        <input type="Text" placeholder="Nombre">
+                        <input type="Text" placeholder="Dirección">
+                        <input type="Text" placeholder="Telefono 1">
+                        <input type="Text" placeholder="Telefono 2">  
+                    </form>
+                    <button>Registrar</button>
+                </div>
+                <div class="contenedor__colegios__tablas">
+                    <div class="contenedor_colegios__tabla1">
+                        <h2>Datos <span class="danger">Colegios</span></h2>
+                        <table id="tabla__colegios__datos">
+                            <thead>
+                                <tr>
+                                    <th>Identificacion</th>
+                                    <th>Nombre</th>
+                                    <th>Dirección</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
+                            <?php foreach($data as dat) { ?>-->
+                                <tr>
+                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
+                                    <td><!--<?php echo $dat['Nombre']?>--></td>
+                                    <!--1006 y Juan se borra ;b-->
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="contenedor_colegios__tabla2">
+                        <h2>Numeros <span class="danger">Colegios</span></h2>
+                        <table id="tabla__colegios__numeros">
+                            <thead>
+                                <tr>
+                                    <th>Identificacion</th>
+                                    <th>Telefono</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <!--Hacen la misma mada aca en contenedor_clientes__tabla2 y borran 1006 y 315-->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div class="contenedor6-sidebar6">
-                <h1>Sidear6</h1>
+            <div class="contenedor__uniformes">
+                <h2>Registrar <span class="danger">Uniformes</span></h2>
+                <div class="contenedor__uniformes__formulario">
+                    <form action="" class="formulario__colegios">
+                        <input type="text" placeholder="ID Uniforme">
+                        <input type="Text" placeholder="Tipo Uniforme">
+                        <input type="Text" placeholder="Color">
+                        <input type="Text" placeholder="Tipo de Tela">
+                        <input type="Text" placeholder="ID Colegio">  
+                    </form>
+                    <button>Registrar</button>
+                </div>
+                <div class="contenedor__uniformes__tablas">
+                    <div class="contenedor_uniformes__tabla1">
+                        <h2>Datos <span class="danger">Uniformes</span></h2>
+                        <table id="tabla__uniformes__datos">
+                            <thead>
+                                <tr>
+                                    <th>ID Uniforme</th>
+                                    <th>Tipo Uniforme</th>
+                                    <th>Color</th>
+                                    <th>Tipo Tela</th>
+                                    <th>ID Colegio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
+                            <?php foreach($data as dat) { ?>-->
+                                <tr>
+                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
+                                    <td><!--<?php echo $dat['Nombre']?>--></td>
+                                    <!--1006 y Juan se borra ;b-->
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div class="contenerdor7-sidebar7">
-                <h1>Sidebar7</h1>
+            <div class="contenedor__producto__terminado">
+                <h2>Registrar <span class="danger">Producto</span></h2>
+                <div class="contenedor__producto__terminado__formulario">
+                    <form action="" class="formulario__producto__terminado">
+                        <input type="text" placeholder="Codigo Producto">
+                        <input type="Text" placeholder="Descripcion">
+                        <input type="Text" placeholder="Talla">
+                        <input type="Text" placeholder="Sexo">
+                        <input type="Text" placeholder="Precio Venta"> 
+                        <input type="Text" placeholder="Cantidad Existencia">  
+                    </form>
+                    <button>Registrar</button>
+                </div>
+                <div class="contenedor__producto__terminado__tablas">
+                    <div class="contenedor_producto__terminado__tabla1">
+                        <h2>Datos <span class="danger">Productos</span></h2>
+                        <table id="tabla__producto__terminado__datos">
+                            <thead>
+                                <tr>
+                                    <th>Codigo Producto</th>
+                                    <th>Descripcion</th>
+                                    <th>Talla</th>
+                                    <th>Sexo</th>
+                                    <th>Precio Venta</th>
+                                    <th>Cantidad Existencia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
+                            <?php foreach($data as dat) { ?>-->
+                                <tr>
+                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
+                                    <td><!--<?php echo $dat['Nombre']?>--></td>
+                                    <!--1006 y Juan se borra ;b-->
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div class="contenedor8-sidebar8">
-                <h1>Sidear8</h1>
+            <div class="contenedor__materia__prima">
+                <h2>Registrar <span class="danger">Materia Prima</span></h2>
+                <div class="contenedor__materia__prima__formulario">
+                    <form action="" class="formulario__materia__prima">
+                        <input type="text" placeholder="Codigo Materia">
+                        <input type="Text" placeholder="Tipo Materia">
+                        <input type="Text" placeholder="Descripción">
+                        <input type="Text" placeholder="Cantidad Existente">
+                        <input type="Text" placeholder="Unidad Medida">
+                        <input type="Text" placeholder="Nit Proveedor">  
+                    </form>
+                    <button>Registrar</button>
+                </div>
+                <div class="contenedor__materia__prima__tablas">
+                    <div class="contenedor_materia__prima__tabla1">
+                        <h2>Datos <span class="danger">Materia Prima</span></h2>
+                        <table id="tabla__materia__prima__datos">
+                            <thead>
+                                <tr>
+                                    <th>Codigo Materia</th>
+                                    <th>Tipo Materia</th>
+                                    <th>Descripcion</th>
+                                    <th>Cantidad Existente</th>
+                                    <th>Nit Proveedor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
+                            <?php foreach($data as dat) { ?>-->
+                                <tr>
+                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
+                                    <td><!--<?php echo $dat['Nombre']?>--></td>
+                                    <!--1006 y Juan se borra ;b-->
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="contenedor_materia__prima__tabla2">
+                        <h2>Unidad <span class="danger">Medida</span></h2>
+                        <table id="tabla__materia__prima__medida">
+                            <thead>
+                                <tr>
+                                    <th>Tipo Materia</th>
+                                    <th>Unidad Medida</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <!--Hacen la misma mada aca en contenedor_clientes__tabla2 y borran 1006 y 315-->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div class="contenerdor9-sidebar9">
-                <h1>Sidebar9</h1>
+            <div class="contenedor__proveedores">
+                <h2>Registrar <span class="danger">Proveedor</span></h2>
+                <div class="contenedor__proveedores__formulario">
+                    <form action="" class="formulario__proveedores">
+                        <input type="text" placeholder="Nit Proveedor">
+                        <input type="Text" placeholder="Nombre">
+                        <input type="Text" placeholder="Nombre Contacto">
+                        <input type="Text" placeholder="Direccion">
+                        <input type="Text" placeholder="Telefono 1">
+                        <input type="Text" placeholder="Telefono 2">  
+                    </form>
+                    <button>Registrar</button>
+                </div>
+                <div class="contenedor__proveedores__tablas">
+                    <div class="contenedor_proveedores__tabla1">
+                        <h2>Datos <span class="danger">Proveedor</span></h2>
+                        <table id="tabla__proveedores__datos">
+                            <thead>
+                                <tr>
+                                    <th>Nit Proveedor</th>
+                                    <th>Nombre</th>
+                                    <th>Nombre Contacto</th>
+                                    <th>Direccion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
+                            <?php foreach($data as dat) { ?>-->
+                                <tr>
+                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
+                                    <td><!--<?php echo $dat['Nombre']?>--></td>
+                                    <!--1006 y Juan se borra ;b-->
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="contenedor_proveedores__tabla2">
+                        <h2>Telefono <span class="danger">Proveedor</span></h2>
+                        <table id="tabla__proveedores__numeros">
+                            <thead>
+                                <tr>
+                                    <th>Nit Proveedor</th>
+                                    <th>Telefono</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <!--Hacen la misma mada aca en contenedor_clientes__tabla2 y borran 1006 y 315-->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
             <div class="contenedor10-sidebar10">
                 <h1>Sidear10</h1>
             </div>
         </main>
+        <aside></aside>
     </div>
     <script src="assets\js\scripthome.js"></script>
      <script src="https://code.jquery.com/jquery-3.4.1.js"

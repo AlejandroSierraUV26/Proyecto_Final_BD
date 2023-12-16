@@ -2,6 +2,7 @@ $(document).ready(function () {
     function initializeDataTable(selector) {
         $(selector).DataTable({
             "ordering" : false,
+            // scrollX: true,
             language: {
                 processing: "Tratamiento en curso...",
                 search: "Buscar&nbsp;:",
@@ -28,7 +29,18 @@ $(document).ready(function () {
             lengthMenu: [ [5, 10, -1], [5, 10, "All"] ],
         });
     }
-
     initializeDataTable('#tabla__clientes__numeros');
     initializeDataTable('#tabla__clientes__nombres');
+    initializeDataTable('#tabla__pedidos');
+    initializeDataTable('#tabla__pedidos__detalles');
+    initializeDataTable('#tabla__facturas');
+    initializeDataTable('#tabla__colegios__numeros');
+    initializeDataTable('#tabla__colegios__datos');
+    initializeDataTable('#tabla__uniformes__datos');
+    initializeDataTable('#tabla__producto__terminado__datos');
+    initializeDataTable('#tabla__materia__prima__medida');
+    initializeDataTable('#tabla__materia__prima__datos');
+    initializeDataTable('#tabla__proveedores__numeros');
+    initializeDataTable('#tabla__proveedores__datos');
+
 });

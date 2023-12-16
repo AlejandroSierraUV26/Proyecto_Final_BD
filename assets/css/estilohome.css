@@ -130,7 +130,8 @@ b {
 
 aside {
     height: 100vh;
-
+    position: sticky;
+    top: 0;
 }
 
 aside .top {
@@ -332,6 +333,8 @@ main .insights small{
     display: block;
 }
 
+/*CLIENTES*/
+
 main .contenedor__clientes {
     margin-top: 2rem;
 }
@@ -396,7 +399,7 @@ main table tbody tr:last-child td{
     outline: none;
     border-radius: var(--card-border-radius);
     margin-right: 35px;
-    margin-left: 35;
+    margin-left: 35px;
 }
 
 .contenedor__clientes .contenedor__clientes__formulario button{
@@ -417,25 +420,510 @@ main table tbody tr:last-child td{
     color: var(--color-white);
 }
 
+/*PEDIDOS*/
 
+/* div.contenedor__pedidos__tablas{
+    width: 1000px;
+    margin: left;
+} */
 
+main .contenedor__pedidos {
+    margin-top: 2rem;
+}
 
+main .contenedor__pedidos .contenedor__pedidos__registro {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 0.5rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: center;
+}
 
+main .contenedor__pedidos .contenedor__pedidos__registro:hover{
+    box-shadow: none;
+}
 
+main .contenedor__pedidos h2{
+    margin-bottom: 0.8rem;
+}
 
+main .contenedor__pedidos .contenedor__pedidos__tablas{
+    display: grid;
+    gap: 1.6rem;
+    margin-top: 4rem;
+}
 
+main .contenedor__pedidos .contenedor__pedidos__tablas table{
+    background: var(--color-white);
+    width: 96%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
 
+main .contenedor__pedidos .contenedor__pedidos__tablas table:hover{
+    box-shadow: none;
+}
 
+.contenedor__pedidos .contenedor__pedidos__registro input{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: var(--color-background);
+    font-size: 16px;
+    outline: none;
+    border-radius: var(--card-border-radius);
+    margin-right: 35px;
+}
 
+.contenedor__pedidos .contenedor__pedidos__registro button{
+    padding: 10px 40px;
+    margin-top: 25px;
+    font-size: 16px;
+    color: var(--color-danger);
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--color-danger);
+    background: transparent;
+    font-weight: 600;
+    transition: all 300ms;
+}
 
+.contenedor__pedidos .contenedor__pedidos__registro button:hover{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
 
+.contenedor__pedidos .contenedor__pedidos__registro select{
+    font-size: 16px;
+    padding: 10px;
+    background: var(--color-background);
+    appearance: auto;
+    border: 0;
+    border-radius: var(--card-border-radius);
+    margin-right: 35px;
+}
+/* Facturas */
 
+main .contenedor__facturas {
+    margin-top: 2rem;
+}
 
+main .contenedor__facturas h2{
+    margin-bottom: 0.8rem;
+}
 
+main .contenedor__facturas .contenedor__facturas__tablas table{
+    background: var(--color-white);
+    width: 96%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
 
+main .contenedor__facturas .contenedor__facturas__tablas table:hover{
+    box-shadow: none;
+}
 
+/*COLEGIOS*/
 
+main .contenedor__colegios {
+    margin-top: 2rem;
+}
 
-.contenedor__clientes, .contenerdor3-sidebar3, .contenedor2-sidebar2, .contenerdor3-sidebar3, .contenedor4-sidebar4, .contenerdor5-sidebar5, .contenedor6-sidebar6, .contenerdor7-sidebar7, .contenedor8-sidebar8, .contenerdor9-sidebar9, .contenedor10-sidebar10 {
+main .contenedor__colegios .contenedor__colegios__formulario {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 0.5rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: center;
+}
+
+main .contenedor__colegios .contenedor__colegios__formulario:hover{
+    box-shadow: none;
+}
+
+main .contenedor__colegios h2{
+    margin-bottom: 0.8rem;
+}
+
+main .contenedor__colegios .contenedor__colegios__tablas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    margin-top: 4rem;
+}
+
+main .contenedor__colegios .contenedor__colegios__tablas table{
+    background: var(--color-white);
+    width: 92%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .contenedor__colegios .contenedor__colegios__tablas table:hover{
+    box-shadow: none;
+}
+
+.contenedor__colegios .contenedor__colegios__formulario form input{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: var(--color-background);
+    font-size: 16px;
+    outline: none;
+    border-radius: var(--card-border-radius);
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+
+.contenedor__colegios .contenedor__colegios__formulario button{
+    padding: 10px 40px;
+    margin-top: 25px;
+    font-size: 16px;
+    color: var(--color-danger);
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--color-danger);
+    background: transparent;
+    font-weight: 600;
+    transition: all 300ms;
+}
+
+.contenedor__colegios .contenedor__colegios__formulario button:hover{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+/*UNIFORMES*/
+
+main .contenedor__uniformes {
+    margin-top: 2rem;
+}
+
+main .contenedor__uniformes .contenedor__uniformes__formulario {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 0.5rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: center;
+}
+
+main .contenedor__uniformes .contenedor__uniformes__formulario:hover{
+    box-shadow: none;
+}
+
+main .contenedor__uniformes h2{
+    margin-bottom: 0.8rem;
+}
+
+main .contenedor__uniformes .contenedor__uniformes__tablas{
+    display: grid;
+    gap: 1.6rem;
+    margin-top: 4rem;
+}
+
+main .contenedor__uniformes .contenedor__uniformes__tablas table{
+    background: var(--color-white);
+    width: 96%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .contenedor__uniformes .contenedor__uniformes__tablas table:hover{
+    box-shadow: none;
+}
+
+.contenedor__uniformes .contenedor__uniformes__formulario form input{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: var(--color-background);
+    font-size: 16px;
+    outline: none;
+    border-radius: var(--card-border-radius);
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+
+.contenedor__uniformes .contenedor__uniformes__formulario button{
+    padding: 10px 40px;
+    margin-top: 25px;
+    font-size: 16px;
+    color: var(--color-danger);
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--color-danger);
+    background: transparent;
+    font-weight: 600;
+    transition: all 300ms;
+}
+
+.contenedor__uniformes .contenedor__uniformes__formulario button:hover{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+/*PRODUCTO TERMINADO*/
+
+main .contenedor__producto__terminado {
+    
+    margin-top: 2rem;
+}
+
+main .contenedor__producto__terminado .contenedor__producto__terminado__formulario {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 0.5rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: center;
+}
+
+main .contenedor__producto__terminado .contenedor__producto__terminado__formulario:hover{
+    box-shadow: none;
+}
+
+main .contenedor__producto__terminado h2{
+    margin-bottom: 0.8rem;
+}
+
+main .contenedor__producto__terminado .contenedor__producto__terminado__tablas{
+    display: grid;
+    gap: 1.6rem;
+    margin-top: 4rem;
+}
+
+main .contenedor__producto__terminado .contenedor__producto__terminado__tablas table{
+    background: var(--color-white);
+    width: 96%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .contenedor__producto__terminado .contenedor__producto__terminado__tablas table:hover{
+    box-shadow: none;
+}
+
+.contenedor__producto__terminado .contenedor__producto__terminado__formulario form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.contenedor__producto__terminado .contenedor__producto__terminado__formulario form input{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: var(--color-background);
+    font-size: 16px;
+    outline: none;
+    border-radius: var(--card-border-radius);
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+
+.contenedor__producto__terminado .contenedor__producto__terminado__formulario button{
+    padding: 10px 40px;
+    margin-top: 25px;
+    font-size: 16px;
+    color: var(--color-danger);
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--color-danger);
+    background: transparent;
+    font-weight: 600;
+    transition: all 300ms;
+}
+
+.contenedor__producto__terminado .contenedor__producto__terminado__formulario button:hover{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+/*MATERIA PRIMA*/
+
+main .contenedor__materia__prima {
+    margin-top: 2rem;
+}
+
+main .contenedor__materia__prima .contenedor__materia__prima__formulario {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 0.5rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: center;
+}
+
+main .contenedor__materia__prima .contenedor__materia__prima__formulario:hover{
+    box-shadow: none;
+}
+
+main .contenedor__materia__prima h2{
+    margin-bottom: 0.8rem;
+}
+
+main .contenedor__materia__prima .contenedor__materia__prima__tablas{
+    display: grid;
+    gap: 1.6rem;
+    margin-top: 4rem;
+}
+
+main .contenedor__materia__prima .contenedor__materia__prima__tablas table{
+    background: var(--color-white);
+    width: 96%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .contenedor__materia__prima .contenedor__materia__prima__tablas table:hover{
+    box-shadow: none;
+}
+
+.contenedor__materia__prima .contenedor__materia__prima__formulario form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.contenedor__materia__prima .contenedor__materia__prima__formulario form input{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: var(--color-background);
+    font-size: 16px;
+    outline: none;
+    border-radius: var(--card-border-radius);
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+
+.contenedor__materia__prima .contenedor__materia__prima__formulario button{
+    padding: 10px 40px;
+    margin-top: 25px;
+    font-size: 16px;
+    color: var(--color-danger);
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--color-danger);
+    background: transparent;
+    font-weight: 600;
+    transition: all 300ms;
+}
+
+.contenedor__materia__prima .contenedor__materia__prima__formulario button:hover{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+/*PROVEEDORES*/
+
+main .contenedor__proveedores {
+    margin-top: 2rem;
+}
+
+main .contenedor__proveedores .contenedor__proveedores__formulario {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 0.5rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: center;
+}
+
+main .contenedor__proveedores .contenedor__proveedores__formulario:hover{
+    box-shadow: none;
+}
+
+main .contenedor__proveedores h2{
+    margin-bottom: 0.8rem;
+}
+
+main .contenedor__proveedores .contenedor__proveedores__tablas{
+    display: grid;
+    gap: 1.6rem;
+    margin-top: 4rem;
+}
+
+main .contenedor__proveedores .contenedor__proveedores__tablas table{
+    background: var(--color-white);
+    width: 96%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .contenedor__proveedores .contenedor__proveedores__tablas table:hover{
+    box-shadow: none;
+}
+
+.contenedor__proveedores .contenedor__proveedores__formulario form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.contenedor__proveedores .contenedor__proveedores__formulario form input{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: var(--color-background);
+    font-size: 16px;
+    outline: none;
+    border-radius: var(--card-border-radius);
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+
+.contenedor__proveedores .contenedor__proveedores__formulario button{
+    padding: 10px 40px;
+    margin-top: 25px;
+    font-size: 16px;
+    color: var(--color-danger);
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--color-danger);
+    background: transparent;
+    font-weight: 600;
+    transition: all 300ms;
+}
+
+.contenedor__proveedores .contenedor__proveedores__formulario button:hover{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+.contenedor__clientes, .contenedor__pedidos, .contenedor__facturas, .contenedor__colegios, .contenedor__uniformes, .contenedor__producto__terminado, .contenedor__materia__prima, .contenedor__proveedores, .contenedor10-sidebar10 {
     display: none;
   }
