@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Admin</title>
+    <title>Inicio Vendedor</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" 
     rel="stylesheet"/>    
-    <link rel="stylesheet" href="assets\css\estilohome.css">
+    <link rel="stylesheet" href="assets\css\estilosHomeVendedor.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 </head>
 <body>
@@ -50,18 +50,6 @@
                 <a href="#" >
                     <span class="material-symbols-outlined">inventory</span>
                     <h3>Inventario</h3>
-                </a>
-                <a href="#" >
-                    <span class="material-symbols-outlined">cut</span>
-                    <h3>Materia Prima</h3>
-                </a>
-                <a href="#" >
-                    <span class="material-symbols-outlined">conveyor_belt</span>
-                    <h3>Proveedores</h3>
-                </a>
-                <a href="#" >
-                    <span class="material-symbols-outlined">settings</span>
-                    <h3>Ajustes</h3>
                 </a>
                 <a href="index.html">
                     <span class="material-symbols-outlined">logout</span>
@@ -380,184 +368,15 @@
                     </div>
                 </div>
             </div>
-            <div class="contenedor__materia__prima">
-                <h2>Registrar <span class="danger">Materia Prima</span></h2>
-                <div class="contenedor__materia__prima__formulario">
-                    <form action="" class="formulario__materia__prima">
-                        <input type="text" placeholder="Codigo Materia">
-                        <input type="Text" placeholder="Tipo Materia">
-                        <input type="Text" placeholder="Descripción">
-                        <input type="Text" placeholder="Cantidad Existente">
-                        <input type="Text" placeholder="Unidad Medida">
-                        <input type="Text" placeholder="Nit Proveedor">  
-                    </form>
-                    <button>Registrar</button>
-                </div>
-                <div class="contenedor__materia__prima__tablas">
-                    <div class="contenedor_materia__prima__tabla1">
-                        <h2>Datos <span class="danger">Materia Prima</span></h2>
-                        <table id="tabla__materia__prima__datos">
-                            <thead>
-                                <tr>
-                                    <th>Codigo Materia</th>
-                                    <th>Tipo Materia</th>
-                                    <th>Descripcion</th>
-                                    <th>Cantidad Existente</th>
-                                    <th>Nit Proveedor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
-                            <?php foreach($data as dat) { ?>-->
-                                <tr>
-                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
-                                    <td><!--<?php echo $dat['Nombre']?>--></td>
-                                    <!--1006 y Juan se borra ;b-->
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="contenedor_materia__prima__tabla2">
-                        <h2>Unidad <span class="danger">Medida</span></h2>
-                        <table id="tabla__materia__prima__medida">
-                            <thead>
-                                <tr>
-                                    <th>Tipo Materia</th>
-                                    <th>Unidad Medida</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <!--Hacen la misma mada aca en contenedor_clientes__tabla2 y borran 1006 y 315-->
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="contenedor__proveedores">
-                <h2>Registrar <span class="danger">Proveedor</span></h2>
-                <div class="contenedor__proveedores__formulario">
-                    <form action="" class="formulario__proveedores">
-                        <input type="text" placeholder="Nit Proveedor">
-                        <input type="Text" placeholder="Nombre">
-                        <input type="Text" placeholder="Nombre Contacto">
-                        <input type="Text" placeholder="Direccion">
-                        <input type="Text" placeholder="Telefono 1">
-                        <input type="Text" placeholder="Telefono 2">  
-                    </form>
-                    <button>Registrar</button>
-                </div>
-                <div class="contenedor__proveedores__tablas">
-                    <div class="contenedor_proveedores__tabla1">
-                        <h2>Datos <span class="danger">Proveedor</span></h2>
-                        <table id="tabla__proveedores__datos">
-                            <thead>
-                                <tr>
-                                    <th>Nit Proveedor</th>
-                                    <th>Nombre</th>
-                                    <th>Nombre Contacto</th>
-                                    <th>Direccion</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
-                            <?php foreach($data as dat) { ?>-->
-                                <tr>
-                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
-                                    <td><!--<?php echo $dat['Nombre']?>--></td>
-                                    <!--1006 y Juan se borra ;b-->
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="contenedor_proveedores__tabla2">
-                        <h2>Telefono <span class="danger">Proveedor</span></h2>
-                        <table id="tabla__proveedores__numeros">
-                            <thead>
-                                <tr>
-                                    <th>Nit Proveedor</th>
-                                    <th>Telefono</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <!--Hacen la misma mada aca en contenedor_clientes__tabla2 y borran 1006 y 315-->
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="contenedor__ajustes__usuario">
-                <h2>Registrar <span class="danger">Usario</span></h2>
-                <div class="contenedor__ajustes__usuario__formulario">
-                    <form action="" class="formulario__ajustes__usuario">
-                        <input type="text" placeholder="Identificacion">
-                        <input type="Text" placeholder="Nombre">
-                        <input type="Text" placeholder="Apellido">
-                        <input type="Text" placeholder="Direccion">
-                        <input type="Text" placeholder="Telefono"> 
-                        <input type="Text" placeholder="Rol">  
-                    </form>
-                    <button>Registrar</button>
-                </div>
-                <h2>Eliminar <span class="danger">Usario</span></h2>
-                <div class="contenedor__eliminar__usuario__formulario">
-                    <form action="" class="formulario__eliminar__usuario">
-                        <input type="text" placeholder="Identificacion">  
-                    </form>
-                    <button>Eliminar</button>
-                </div>
-                <div class="contenedor__ajustes__usuario__tablas">
-                    <div class="contenedor_ajustes__usuario__tabla1">
-                        <h2>Datos <span class="danger">Usuario</span></h2>
-                        <table id="tabla__ajustes__usuario__datos">
-                            <thead>
-                                <tr>
-                                    <th>Identificacion</th>
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
-                                    <th>Direccion</th>
-                                    <th>Telefono</th>
-                                    <th>Rol</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <!--EJEMPLO DE COLOCAR LOS DATOS EN LA TABLA
-                            <?php foreach($data as dat) { ?>-->
-                                <tr>
-                                    <td><!--<?php echo $dat['Identificacion']?>--></td>
-                                    <td><!--<?php echo $dat['Nombre']?>--></td>
-                                    <!--1006 y Juan se borra ;b-->
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
         </main>
         <aside></aside>
     </div>
-    <script src="assets\js\scripthome.js"></script>
+    <script src="assets\js\scriptHomeVendedor.js"></script>
      <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
         </script>
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">
     </script> 
-    <script src="assets\js\dataTableConfig.js"></script>
+    <script src="assets\js\dataTableConfigVendedor.js"></script>
 </body>
 </html>
