@@ -757,6 +757,75 @@ main .contenedor__producto__terminado .contenedor__producto__terminado__tablas t
     color: var(--color-white);
 }
 
+.derecha{
+    font-family: poppins, sans-serif;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
+}
+
+.derecha .top {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 0.5rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: center;
+}
+
+.derecha .top:hover{
+    box-shadow: none;
+}
+
+.derecha h2{
+    margin-bottom: 0.8rem;
+}
+
+.derecha .informacion__usuario {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 2rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: center;
+}
+
+.derecha .informacion__usuario:hover {
+    box-shadow: none;
+
+}
+
+.derecha .informacion__usuario h3{
+    text-align: left;
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+
+}
+
+.derecha .tiempo__activo {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 2rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: center;
+}
+
+.derecha .tiempo__activo:hover {
+    box-shadow: none;
+
+}
+
+.derecha .tiempo__activo p{
+    font-size: 21px;
+    color: var(--color-dark);
+
+}
+
 .contenedor__clientes, .contenedor__pedidos, .contenedor__facturas, .contenedor__colegios, .contenedor__uniformes, .contenedor__producto__terminado {
     display: none;
   }

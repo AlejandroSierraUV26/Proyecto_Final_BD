@@ -86,3 +86,58 @@ function updateClassesBasedOnState() {
   });
 }
 updateClassesBasedOnState();
+
+// counter.js
+let seconds = 0;
+let minutes = 0;
+let hours = 0;
+
+function pad(val) {
+    return val > 9 ? val : "0" + val;
+}
+
+window.onload = function() {
+    // Load saved time from localStorage if it exists
+    if (localStorage.getItem('hours')) {
+        hours = parseInt(localStorage.getItem('hours'));
+        minutes = parseInt(localStorage.getItem('minutes'));
+        seconds = parseInt(localStorage.getItem('seconds'));
+    }
+
+    setInterval(function() {
+        seconds++;
+        if (seconds >= 60) {
+            minutes++;
+            seconds = 0;
+        }
+        if (minutes >= 60) {
+            hours++;
+            minutes = 0;
+        }
+        document.getElementById('counter').textContent = pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
+
+        // Save time to localStorage every second
+        localStorage.setItem('hours', hours);
+        localStorage.setItem('minutes', minutes);
+        localStorage.setItem('seconds', seconds);
+    }, 1000);
+};
+
+// Get the logout link element
+let logoutLink = document.getElementById('logout');
+
+// Add click event listener
+logoutLink.addEventListener('click', function() {
+    // Reset counter
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+
+    // Update counter display
+    document.getElementById('counter').textContent = pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
+
+    // Save reset counter to localStorage
+    localStorage.setItem('hours', hours);
+    localStorage.setItem('minutes', minutes);
+    localStorage.setItem('seconds', seconds);
+});
