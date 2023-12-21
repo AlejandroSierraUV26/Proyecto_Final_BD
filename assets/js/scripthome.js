@@ -1,5 +1,5 @@
 const containerClasses = '.contenedor__menu, .contenedor__clientes, .contenedor__pedidos, .contenedor__facturas, .contenedor__colegios, .contenedor__uniformes, .contenedor__producto__terminado, .contenedor__materia__prima, .contenedor__proveedores, .contenedor__ajustes__usuario';
-const products = ['CAMISA HOMBRE', 'PANTALON HOMBRE', 'BUSO HOMBRE', 'SHORTS HOMBRE', 'CAMISA MUJER', 'PANTALON MUJER', 'VESTIDO', 'FALDA', 'CAMISA DIARIO HOMBRE', 'PANTALON DIARIO HOMBRE', 'CAMISA ED. FISICA HOMBRE', 'SUDADERA HOMBRE', 'CAMISA DIARIO MUJER', 'JARDINERA', 'FALDA ESCOLAR', 'CAMISA ED. FISICA MUJER', 'SUDADERA MUJER'];
+const products = ['CAMISA HOMBRE', 'PANTALON HOMBRE', 'BUSO HOMBRE', 'SHORTS HOMBRE', 'CAMISA MUJER', 'PANTALON MUJER', 'VESTIDO', 'FALDA', 'CAMISA DIARIO HOMBRE', 'PANTALON DIARIO HOMBRE', 'CAMISA ED FISICA HOMBRE', 'SUDADERA HOMBRE', 'CAMISA DIARIO MUJER', 'JARDINERA', 'FALDA ESCOLAR', 'CAMISA ED FISICA MUJER', 'SUDADERA MUJER'];
 const schoolProducts = ['CAMISA DIARIO HOMBRE', 'PANTALON DIARIO HOMBRE', 'CAMISA ED. FISICA HOMBRE', 'SUDADERA HOMBRE', 'CAMISA DIARIO MUJER', 'JARDINERA', 'FALDA ESCOLAR', 'CAMISA ED. FISICA MUJER', 'SUDADERA MUJER'];
 const schools = ['Politecnico', 'Comfandi', 'Academico'];
 const stateClasses = {
@@ -34,9 +34,11 @@ document.getElementById('nuevoPedidoBoton').addEventListener('click', function()
   var orderContainer = document.getElementById('pedidoid');
   var newOrder = document.createElement('div');
   newOrder.className = 'pedido';
+  
 
   var productSelect = document.createElement('select');
   productSelect.className = 'productos';
+  productSelect.name = 'articulo';
   products.forEach(product => productSelect.appendChild(createOption(product, product)));
 
   productSelect.addEventListener('change', function() {
@@ -55,10 +57,12 @@ document.getElementById('nuevoPedidoBoton').addEventListener('click', function()
 
   var medidaLargo = document.createElement('input');
   medidaLargo.type = 'text';
+  medidaLargo.name = "largo";
   medidaLargo.className = 'largo';
-  medidaLargo.placeholder = 'Largo'; medidaLargo
+  medidaLargo.placeholder = 'Largo'; 
   var medidaAncho = document.createElement('input');
   medidaAncho.type = 'text';
+  medidaAncho.name = "ancho";
   medidaAncho.className = 'ancho';
   medidaAncho.placeholder = 'Ancho';
 
